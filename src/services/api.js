@@ -1,7 +1,8 @@
 import axios from 'axios';
 
+// Replace the URL below with your Render backend URL
 const API = axios.create({
-  baseURL: 'http://localhost:5000/api', // Ensure backend running here
+  baseURL: 'https://your-backend-name.onrender.com/api'
 });
 
 export const getProducts = () => API.get('/product');
